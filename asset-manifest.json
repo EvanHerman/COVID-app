@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/COVID-app/static/css/main.67d9507e.css",
-    "main.js": "/COVID-app/static/js/main.481682d7.js",
+    "main.css": "/COVID-app/static/css/main.b6fceae5.css",
+    "main.js": "/COVID-app/static/js/main.d4ed942a.js",
     "static/js/498.1db79e33.chunk.js": "/COVID-app/static/js/498.1db79e33.chunk.js",
     "static/js/703.235b7015.chunk.js": "/COVID-app/static/js/703.235b7015.chunk.js",
     "static/js/652.1b7a6c3c.chunk.js": "/COVID-app/static/js/652.1b7a6c3c.chunk.js",
-    "static/js/787.c6d58055.chunk.js": "/COVID-app/static/js/787.c6d58055.chunk.js",
     "static/media/do.svg": "/COVID-app/static/media/do.3ecb625b75ec64be4376.svg",
     "static/media/rs.svg": "/COVID-app/static/media/rs.9f00a7d8eafa6f593713.svg",
     "static/media/bo.svg": "/COVID-app/static/media/bo.88ba0b0a7e48ec71eca8.svg",
@@ -56,6 +55,7 @@
     "static/media/md.svg": "/COVID-app/static/media/md.b51b6be960f624fb9814.svg",
     "static/media/lk.svg": "/COVID-app/static/media/lk.3cb867c4401d5caa5bcf.svg",
     "static/media/je.svg": "/COVID-app/static/media/je.8411f21613e22430cbfa.svg",
+    "index.html": "/COVID-app/index.html",
     "static/media/mt.svg": "/COVID-app/static/media/mt.a39094a015bbe6ba3861.svg",
     "static/media/sa.svg": "/COVID-app/static/media/sa.0ac9ef7170a22c190290.svg",
     "static/media/im.svg": "/COVID-app/static/media/im.1471ac6032ffd8766943.svg",
@@ -157,7 +157,6 @@
     "static/media/ca.svg": "/COVID-app/static/media/ca.4549a2d2d66577e077c9.svg",
     "static/media/lr.svg": "/COVID-app/static/media/lr.c70ba2e26749882f79c7.svg",
     "static/media/jo.svg": "/COVID-app/static/media/jo.6fe6e076d9928ca834ff.svg",
-    "index.html": "/COVID-app/index.html",
     "static/media/ws.svg": "/COVID-app/static/media/ws.314e33c2a444698f4bce.svg",
     "static/media/cf.svg": "/COVID-app/static/media/cf.e2e89fb8727d254107da.svg",
     "static/media/cw.svg": "/COVID-app/static/media/cw.f65c0891df42c24b23dc.svg",
@@ -272,15 +271,14 @@
     "static/media/pl.svg": "/COVID-app/static/media/pl.cd835d05865e496ff6b8.svg",
     "static/media/de.svg": "/COVID-app/static/media/de.6435bf24d148ca7248e7.svg",
     "static/media/bd.svg": "/COVID-app/static/media/bd.0ad8c443ef4d47ea0497.svg",
-    "main.67d9507e.css.map": "/COVID-app/static/css/main.67d9507e.css.map",
-    "main.481682d7.js.map": "/COVID-app/static/js/main.481682d7.js.map",
+    "main.b6fceae5.css.map": "/COVID-app/static/css/main.b6fceae5.css.map",
+    "main.d4ed942a.js.map": "/COVID-app/static/js/main.d4ed942a.js.map",
     "498.1db79e33.chunk.js.map": "/COVID-app/static/js/498.1db79e33.chunk.js.map",
     "703.235b7015.chunk.js.map": "/COVID-app/static/js/703.235b7015.chunk.js.map",
-    "652.1b7a6c3c.chunk.js.map": "/COVID-app/static/js/652.1b7a6c3c.chunk.js.map",
-    "787.c6d58055.chunk.js.map": "/COVID-app/static/js/787.c6d58055.chunk.js.map"
+    "652.1b7a6c3c.chunk.js.map": "/COVID-app/static/js/652.1b7a6c3c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.67d9507e.css",
-    "static/js/main.481682d7.js"
+    "static/css/main.b6fceae5.css",
+    "static/js/main.d4ed942a.js"
   ]
 }
