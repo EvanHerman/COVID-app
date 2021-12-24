@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 // Internal Componenets
 import CountriesDataTable from './components/countries-data-table';
 import WorldTotals from './components/world-totals';
+import './components/about-link';
 
 // External Componenets
 import Chart from "react-google-charts";
