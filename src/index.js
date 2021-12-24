@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import CountriesDataTable from './components/countries-data-table';
 import WorldTotals from './components/world-totals';
+import './components/about-link';
 
 import './App.css';
 

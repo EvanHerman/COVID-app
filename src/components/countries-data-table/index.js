@@ -1,6 +1,6 @@
 import React from 'react';
 import MaterialTable from 'material-table';
-import tableIcons from '../material-table-icons';
+import tableIcons from '../../utils/material-table-icons';
 import './css/flag-icons.min.css'
 
 class CountriesDataTable extends React.Component {
