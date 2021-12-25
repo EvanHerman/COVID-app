@@ -30,25 +30,24 @@ class Footer extends React.Component {
           <div className="container mx-auto px-8">
             <div className="w-full flex flex-col md:flex-row py-6 grid grid-cols-3 gap-4">
               <div className="flex-2 mb-6 text-black col-span-2">
-                <a className="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
-                  <img className="h-8 inline" src="images/logo192.png" />
-                  COVID-19 Data Tracker
-                </a>
+                <span className="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl">
+                  <img className="h-8 inline" alt="COVID-19 Logo" src="images/logo192.png" /> COVID-19 Data Tracker
+                </span>
               </div>
               <div className="flex-1">
                 <p className="uppercase text-gray-500 md:mb-6">Links</p>
                 <ul className="list-reset mb-6">
                   <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <a href="https://www.github.com/EvanHerman" target="_blank" className="no-underline hover:underline text-gray-800 hover:text-pink-500">@EvanHerman on Github</a>
+                    <a href="https://www.github.com/EvanHerman" target="_blank" rel="noreferrer" className="no-underline hover:underline text-gray-800 hover:text-pink-500">@EvanHerman on Github</a>
                   </li>
                   <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <a href="https://www.evan-herman.com" target="_blank" className="no-underline hover:underline text-gray-800 hover:text-pink-500">Evan Herman</a>
+                    <a href="https://www.evan-herman.com" target="_blank" rel="noreferrer" className="no-underline hover:underline text-gray-800 hover:text-pink-500">Evan Herman</a>
                   </li>
                   <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <a href="https://www.codeparrots.com" target="_blank" className="no-underline hover:underline text-gray-800 hover:text-pink-500">Code Parrots</a>
+                    <a href="https://www.codeparrots.com" target="_blank" rel="noreferrer" className="no-underline hover:underline text-gray-800 hover:text-pink-500">Code Parrots</a>
                   </li>
                   <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <a href="https://www.wpicons.com" target="_blank" className="no-underline hover:underline text-gray-800 hover:text-pink-500">WPIcons</a>
+                    <a href="https://www.wpicons.com" target="_blank" rel="noreferrer" className="no-underline hover:underline text-gray-800 hover:text-pink-500">WPIcons</a>
                   </li>
                 </ul>
               </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Chart from "react-google-charts";
 
 // Internal Components
@@ -6,10 +6,6 @@ import CountriesDataTable from '../countries-data-table';
 import WorldTotals from '../world-totals';
 
 class LiveData extends React.Component {
-  constructor( props ) {
-    super( props );
-  }
-
   setupChartData( covidData ) {
     covidData.sort( function( a, b ) {
       var keyA = new Date( a.confirmed ),
@@ -52,7 +48,7 @@ class LiveData extends React.Component {
 
             <p className="italic text-gray-500 text-center text-sm py-10">
               Information provided by RapidAPI's top COVID-19 Data API:<br />
-              <a href="https://rapidapi.com/Gramzivi/api/covid-19-data" target="_blank" className="text-blue-700">COVID-19 Data API</a>
+              <a href="https://rapidapi.com/Gramzivi/api/covid-19-data" target="_blank" rel="noreferrer" className="text-blue-700">COVID-19 Data API</a>
             </p>
 
             <Chart

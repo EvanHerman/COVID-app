@@ -31,18 +31,14 @@ const AboutLink = () => {
 };
 
 class MainNav extends React.Component {
-  constructor( props ) {
-    super( props );
-  }
-
   render() {
     return (
       <nav id="header" className="fixed w-full z-30 top-0 text-white">
         <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
           <div className="pl-4 flex items-center">
-            <a className="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
-              <img className="h-8 inline" src="images/logo192.png" /> COVID-19 Data Tracker
-            </a>
+            <span className="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl">
+              <img className="h-8 inline" src="images/logo192.png" alt="COVID-19 Logo" /> COVID-19 Data Tracker
+            </span>
           </div>
           <div className="block lg:hidden pr-4">
             <button id="nav-toggle" className="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
