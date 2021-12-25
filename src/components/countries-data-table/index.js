@@ -1,31 +1,12 @@
 import React from 'react';
 import MaterialTable from 'material-table';
 import tableIcons from '../../utils/material-table-icons';
-import './css/flag-icons.min.css'
+import 'flag-icons/css/flag-icons.min.css'
 
 class CountriesDataTable extends React.Component {
   constructor( props ) {
     super( props );
     this.formatColumnNumber = this.formatColumnNumber.bind( this );
-    this.state = { countryData: [] };
-  }
-
-  componentDidMount() {
-    fetch( "https://www.covid19-api.com/country/all?format=json", {
-      "method": "GET",
-      "headers": {
-        "accept": "application/json"
-      }
-    } )
-    .then( ( res ) => res.json() )
-    .then( response => {
-      this.setState( {
-        countryData: response
-      } );
-    } )
-    .catch( err => {
-      console.error( err );
-    } );
   }
 
   formatColumnNumber( value ) {
@@ -35,7 +16,7 @@ class CountriesDataTable extends React.Component {
   render() {
     let data = [];
 
-    this.state.countryData.map ( ( country ) => (
+    this.props.covidData.map( ( country ) => (
       data.push( {
         countryAbbrev: country.code?.toLowerCase(),
         country: country.country,
@@ -62,7 +43,7 @@ class CountriesDataTable extends React.Component {
     };
 
     return (
-      <MaterialTable title="COVID-19 Data" icons={tableIcons} columns={columns} data={data} options={tableOptions} />
+      <MaterialTable title="COVID-19 Data" icons={tableIcons} columns={columns} data={data.reverse()} options={tableOptions} />
     );
   }
 
