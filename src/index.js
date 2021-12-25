@@ -6,9 +6,12 @@ import {
   BrowserRouter,
 } from "react-router-dom";
 
+import { setCacheWithExpiry, getCacheWithExpiry } from './utils/helpers.js'
+
+let covidCache = getCacheWithExpiry( "covid-19-cache" );
+
 // Check for API cache
-if ( localStorage.getItem( "covid-19-cache" ) !== null ) {
-  let covidCache = JSON.parse( localStorage.getItem( "covid-19-cache" ) );
+if ( covidCache !== null ) {
   if ( !! covidCache.covidData && !! covidCache.geoLocationData ) {
     ReactDOM.render(
       <BrowserRouter>
@@ -33,7 +36,8 @@ if ( localStorage.getItem( "covid-19-cache" ) !== null ) {
     } )
     .then( ( geoLocationData ) => geoLocationData.json() )
     .then( geoLocationData => {
-      window.localStorage.setItem( "covid-19-cache", JSON.stringify( { covidData: covidData, geoLocationData: geoLocationData } ) );
+      // Cache the API data for 15 minutes
+      setCacheWithExpiry( "covid-19-cache", JSON.stringify( { covidData: covidData, geoLocationData: geoLocationData } ), 900000 );
       ReactDOM.render(
         <BrowserRouter>
           <App covidData={covidData} geoLocationData={geoLocationData} />
