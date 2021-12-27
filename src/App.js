@@ -10,6 +10,7 @@ import MainNav from './components/main-nav';
 import Hero from './components/hero';
 import LiveData from './components/live-data';
 import Footer from './components/footer';
+import Map from './components/map';
 
 // Styles
 import './App.css';
@@ -46,14 +47,12 @@ class Home extends React.Component {
 }
 
 /**
- * Map Component
+ * MapPage Component
  */
-class Map extends React.Component {
+class MapPage extends React.Component {
   render() {
     return (
-      <div>
-        <h2>Map</h2>
-      </div>
+      <Map covidData={this.props.covidData} />
     );
   }
 }
