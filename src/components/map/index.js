@@ -47,7 +47,7 @@ export default function Map( props ) {
       <GoogleMapReact
         bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_KEY }}
         center={{ lat: props.geoLocationData.latitude, lng: props.geoLocationData.longitude }}
-        defaultZoom={6}
+        defaultZoom={4}
         yesIWantToUseGoogleMapApiInternals
         onGoogleApiLoaded={( { map } ) => {
           mapRef.current = map;
