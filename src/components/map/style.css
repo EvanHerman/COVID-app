@@ -8,11 +8,11 @@
   align-items: center;
 }
 
-.crime-marker {
+.covid-marker {
   background: none;
   border: none;
 }
 
-.crime-marker img {
+.covid-marker img {
   width: 25px;
 }

@@ -21,7 +21,7 @@ class App extends React.Component {
       <>
         <Routes>
           <Route exact path="/COVID-app" element={<Home covidData={this.props.covidData} geoLocationData={this.props.geoLocationData} />} />
-          <Route exact path="/COVID-app/map" element={<Map covidData={this.props.covidData} />} />
+          <Route exact path="/COVID-app/map" element={<Map covidData={this.props.covidData} geoLocationData={this.props.geoLocationData} />} />
         </Routes>
       </>
     );
@@ -42,17 +42,6 @@ class Home extends React.Component {
         <LiveData covidData={this.props.covidData} />
         <Footer />
       </>
-    );
-  }
-}
-
-/**
- * MapPage Component
- */
-class MapPage extends React.Component {
-  render() {
-    return (
-      <Map covidData={this.props.covidData} />
     );
   }
 }

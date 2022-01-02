@@ -46,8 +46,8 @@ export default function Map( props ) {
     <div style={{ height: "100vh", width: "100%" }}>
       <GoogleMapReact
         bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_KEY }}
-        defaultCenter={{ lat: 36.2074719, lng: -113.742478 }}
-        defaultZoom={1}
+        center={{ lat: props.geoLocationData.latitude, lng: props.geoLocationData.longitude }}
+        defaultZoom={6}
         yesIWantToUseGoogleMapApiInternals
         onGoogleApiLoaded={( { map } ) => {
           mapRef.current = map;
@@ -99,12 +99,12 @@ export default function Map( props ) {
 
           return (
             <Marker
-              key={`crime-${cluster.properties.countryCode}`}
+              key={`covid-${cluster.properties.countryCode}`}
               lat={latitude}
               lng={longitude}
             >
-              <button className="crime-marker">
-                <img src="/favicon.ico" alt="crime doesn't pay" />
+              <button className="covid-marker">
+                <img src="/favicon.ico" alt="COVID-19" />
               </button>
             </Marker>
           );
